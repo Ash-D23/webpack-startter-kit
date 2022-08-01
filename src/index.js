@@ -1,9 +1,4 @@
 import App from "./App";
-import Logo from "./logo.svg";
+import ReactDOM from 'react-dom'
 
-const root = document.getElementById("root");
-root.innerHTML = `
-<img src="${Logo}" alt="builder icon" />
-<h1> learning web tooling today </h1>
-${App({ name: "Akshay" })}
-`;
+ReactDOM.render(<App />, document.getElementById('root'))

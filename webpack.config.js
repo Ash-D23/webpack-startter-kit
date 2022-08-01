@@ -3,7 +3,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const webpackConfig = {
 	entry: path.resolve(__dirname, "src", "index.js"),
-
+	resolve: {
+		extensions: ['.tsx', '.ts', '.js'],
+	  },
 	output: {
 		filename: "[name].[contenthash].bundle.js", 
 		path: path.resolve(__dirname, "dist"),
@@ -18,7 +20,10 @@ const webpackConfig = {
 				use: {
 					loader: "babel-loader",
 					options: {
-						presets: ["@babel/preset-env"]
+						"presets": [
+							"@babel/preset-env",
+						   ["@babel/preset-react", {"runtime": "automatic"}]
+						]
 					}
 				}
 			},
