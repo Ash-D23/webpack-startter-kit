@@ -1,6 +1,6 @@
 # Webpack Starter Kit project
 
-If you want to create a project using ES6 full features (including module export/import), 
+If you want to create a project using ES6 full features (including module export/import)
 with React, Typescript, Caching & Code Splitting. 
 
 The project has the following features:
