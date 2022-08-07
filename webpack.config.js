@@ -2,9 +2,9 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const webpackConfig = {
-	entry: path.resolve(__dirname, "src", "index.js"),
+	entry: path.resolve(__dirname, "src", "index.tsx"),
 	resolve: {
-		extensions: ['.tsx', '.ts', '.js'],
+		extensions: ['.tsx', '.ts', '.js', '.jsx'],
 	  },
 	output: {
 		filename: "[name].[contenthash].bundle.js", 
@@ -15,14 +15,15 @@ const webpackConfig = {
 	module: {
 		rules: [
 			{
-				test: /\.js$/,
+				test: /\.(js|jsx|ts|tsx)$/,
 				exclude: /(node_modules)/,
 				use: {
 					loader: "babel-loader",
 					options: {
 						"presets": [
 							"@babel/preset-env",
-						   ["@babel/preset-react", {"runtime": "automatic"}]
+						   ["@babel/preset-react", {"runtime": "automatic"}],
+						   "@babel/preset-typescript"
 						]
 					}
 				}
