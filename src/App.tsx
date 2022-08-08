@@ -5,9 +5,11 @@ import Logo from "./logo.svg";
 const App = () => {
 
 	return <>
-        <h2> Hello World </h2>
-        <img src={Logo} />
-        <p> Build apps with plain JS but with modern tooling  </p>
+        <h2 className="heading"> {_.join(["Welcome,", "Everyone"], " ")} </h2>
+        <h2 className="sub-heading">Webpack Starter Kit with React & Typescript</h2>
+        <div className="image--container">
+            <img src={Logo} />
+        </div>
     </>
 };
 
