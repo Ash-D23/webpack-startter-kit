@@ -1,7 +1,35 @@
-h1 {
-    color: royalblue;
-  }
-  
-  h2 {
-    color: orangered;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #83a4d4;
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4); 
+  background: linear-gradient(to right, #b6fbff, #83a4d4); 
+
+}
+
+.heading{
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1rem;
+  color: #4c1d95
+
+}
+
+.sub-heading{
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  color: #4338ca;
+}
+
+.image--container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
