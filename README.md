@@ -9,7 +9,7 @@ The project has the following features:
  - Code Splitting
  - Caching
  - Webpack dev server
- - HMR for hot reloading and faster development
+ - Typescript Configuration
  
 #### The project is production ready.
  
@@ -20,7 +20,7 @@ The project has the following features:
 
 ## Running on development using dev server
 
-Run `npm run start` to start to webpack dev server with HMR ready
+Run `npm run start` to start to webpack dev server
 
 ## For production 
 
