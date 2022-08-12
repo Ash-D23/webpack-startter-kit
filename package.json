@@ -10,7 +10,7 @@
 	},
 	"browserslist": "> 0.25%, not dead",
 	"scripts": {
-		"start": "webpack serve --open --liveReload",
+		"start": "webpack serve --open",
 		"build": "webpack",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
